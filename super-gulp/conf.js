@@ -12,7 +12,7 @@ var gutil = require('gulp-util');
  *  The main paths of your project handle these with care
  */
 exports.paths = {
-  src: 'app/src',
+  src: 'super-admin-app/src',
   dist: 'release',
   tmp: '.tmp',
   e2e: 'e2e'
@@ -25,7 +25,7 @@ exports.paths = {
  */
 exports.wiredep = {
   exclude: [/\/bootstrap\.js$/, /\/bootstrap-sass\/.*\.js/, /\/require\.js/],
-  directory: 'app/bower_components'
+  directory: 'super-admin-app/bower_components'
 };
 
 /**

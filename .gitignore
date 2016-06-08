@@ -53,4 +53,4 @@ build
 /release
 /bower_components
 
-app/bower_components
+super-admin-app/bower_components
