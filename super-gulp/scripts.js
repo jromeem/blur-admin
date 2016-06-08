@@ -19,7 +19,7 @@ gulp.task('super-scripts', function() {
 });
 
 function buildScripts() {
-  return gulp.src(path.join(conf.paths.src, '/potato/**/*.js'))
+  return gulp.src(path.join(conf.paths.src, '/super-admin/**/*.js'))
     .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.size())

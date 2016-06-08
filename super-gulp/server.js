@@ -44,7 +44,7 @@ function browserSyncInit(baseDir, browser) {
 }
 
 browserSync.use(browserSyncSpa({
-  selector: '[ng-app]'// Only needed for angular potatos
+  selector: '[ng-app]'// Only needed for angular super-admins
 }));
 
 gulp.task('super-serve', ['super-watch'], function () {

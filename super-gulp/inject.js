@@ -17,16 +17,16 @@ gulp.task('super-inject-reload', ['super-inject'], function () {
 
 gulp.task('super-inject', ['super-scripts', 'super-styles', 'super-injectAuth', 'super-inject404', 'super-copyVendorImages'], function () {
   var injectStyles = gulp.src([
-    path.join(conf.paths.tmp, '/serve/potato/main.css'),
-    path.join('!' + conf.paths.tmp, '/serve/potato/vendor.css')
+    path.join(conf.paths.tmp, '/serve/super-admin/main.css'),
+    path.join('!' + conf.paths.tmp, '/serve/super-admin/vendor.css')
   ], {read: false});
 
   var injectScripts = gulp.src([
     path.join(conf.paths.src, '/assets/js/**/*.js'),
-    path.join(conf.paths.src, '/potato/**/*.module.js'),
-    path.join(conf.paths.src, '/potato/**/*.js'),
-    path.join('!' + conf.paths.src, '/potato/**/*.spec.js'),
-    path.join('!' + conf.paths.src, '/potato/**/*.mock.js'),
+    path.join(conf.paths.src, '/super-admin/**/*.module.js'),
+    path.join(conf.paths.src, '/super-admin/**/*.js'),
+    path.join('!' + conf.paths.src, '/super-admin/**/*.spec.js'),
+    path.join('!' + conf.paths.src, '/super-admin/**/*.mock.js'),
   ])
     /*.pipe($.angularFilesort())*/.on('error', conf.errorHandler('AngularFilesort'));
 
@@ -44,14 +44,14 @@ gulp.task('super-inject', ['super-scripts', 'super-styles', 'super-injectAuth', 
 
 gulp.task('super-injectAuth', ['super-stylesAuth'], function () {
   return injectAlone({
-    css: [path.join('!' + conf.paths.tmp, '/serve/potato/vendor.css'), path.join(conf.paths.tmp, '/serve/potato/auth.css')],
+    css: [path.join('!' + conf.paths.tmp, '/serve/super-admin/vendor.css'), path.join(conf.paths.tmp, '/serve/super-admin/auth.css')],
     paths: [path.join(conf.paths.src, '/auth.html'), path.join(conf.paths.src, '/reg.html')]
   })
 });
 
 gulp.task('super-inject404', ['super-styles404'], function () {
   return injectAlone({
-    css: [path.join('!' + conf.paths.tmp, '/serve/potato/vendor.css'), path.join(conf.paths.tmp, '/serve/potato/404.css')],
+    css: [path.join('!' + conf.paths.tmp, '/serve/super-admin/vendor.css'), path.join(conf.paths.tmp, '/serve/super-admin/404.css')],
     paths: path.join(conf.paths.src, '/404.html')
   })
 });

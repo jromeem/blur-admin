@@ -25,7 +25,7 @@ gulp.task('super-watch', ['super-inject'], function () {
     }
   });
 
-  gulp.watch(path.join(conf.paths.src, '/potato/**/*.js'), function(event) {
+  gulp.watch(path.join(conf.paths.src, '/super-admin/**/*.js'), function(event) {
     if(isOnlyChange(event)) {
       gulp.start('scripts-reload');
     } else {
@@ -33,7 +33,7 @@ gulp.task('super-watch', ['super-inject'], function () {
     }
   });
 
-  gulp.watch(path.join(conf.paths.src, '/potato/**/*.html'), function(event) {
+  gulp.watch(path.join(conf.paths.src, '/super-admin/**/*.html'), function(event) {
     browserSync.reload(event.path);
   });
 });
