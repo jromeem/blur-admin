@@ -12,7 +12,7 @@ var gutil = require('gulp-util');
  *  The main paths of your project handle these with care
  */
 exports.paths = {
-  src: 'spaap/super-admin',
+  src: 'spaap',
   dist: 'release',
   tmp: '.tmp',
   e2e: 'e2e'
