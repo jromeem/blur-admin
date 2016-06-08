@@ -47,18 +47,18 @@ browserSync.use(browserSyncSpa({
   selector: '[ng-app]'// Only needed for angular apps
 }));
 
-gulp.task('serve', ['watch'], function () {
+gulp.task('super-serve', ['super-watch'], function () {
   browserSyncInit([path.join(conf.paths.tmp, '/serve'), conf.paths.src]);
 });
 
-gulp.task('serve:dist', ['build'], function () {
+gulp.task('super-serve:dist', ['super-build'], function () {
   browserSyncInit(conf.paths.dist);
 });
 
-gulp.task('serve:e2e', ['inject'], function () {
+gulp.task('super-serve:e2e', ['super-inject'], function () {
   browserSyncInit([conf.paths.tmp + '/serve', conf.paths.src], []);
 });
 
-gulp.task('serve:e2e-dist', ['build'], function () {
+gulp.task('super-serve:e2e-dist', ['super-build'], function () {
   browserSyncInit(conf.paths.dist, []);
 });

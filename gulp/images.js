@@ -4,7 +4,7 @@ var path = require('path');
 var gulp = require('gulp');
 var conf = require('./conf');
 
-gulp.task('copyVendorImages', function () {
+gulp.task('super-copyVendorImages', function () {
   return gulp
     .src([
       path.join(conf.wiredep.directory, '**/ammap/dist/ammap/images/**/*'),

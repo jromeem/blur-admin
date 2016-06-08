@@ -11,11 +11,11 @@ var _ = require('lodash');
 
 var browserSync = require('browser-sync');
 
-gulp.task('inject-reload', ['inject'], function () {
+gulp.task('super-inject-reload', ['super-inject'], function () {
   browserSync.reload();
 });
 
-gulp.task('inject', ['scripts', 'styles', 'injectAuth', 'inject404', 'copyVendorImages'], function () {
+gulp.task('super-inject', ['super-scripts', 'super-styles', 'super-injectAuth', 'super-inject404', 'super-copyVendorImages'], function () {
   var injectStyles = gulp.src([
     path.join(conf.paths.tmp, '/serve/app/main.css'),
     path.join('!' + conf.paths.tmp, '/serve/app/vendor.css')
@@ -42,14 +42,14 @@ gulp.task('inject', ['scripts', 'styles', 'injectAuth', 'inject404', 'copyVendor
     .pipe(gulp.dest(path.join(conf.paths.tmp, '/serve')));
 });
 
-gulp.task('injectAuth', ['stylesAuth'], function () {
+gulp.task('super-injectAuth', ['super-stylesAuth'], function () {
   return injectAlone({
     css: [path.join('!' + conf.paths.tmp, '/serve/app/vendor.css'), path.join(conf.paths.tmp, '/serve/app/auth.css')],
     paths: [path.join(conf.paths.src, '/auth.html'), path.join(conf.paths.src, '/reg.html')]
   })
 });
 
-gulp.task('inject404', ['styles404'], function () {
+gulp.task('super-inject404', ['super-styles404'], function () {
   return injectAlone({
     css: [path.join('!' + conf.paths.tmp, '/serve/app/vendor.css'), path.join(conf.paths.tmp, '/serve/app/404.css')],
     paths: path.join(conf.paths.src, '/404.html')

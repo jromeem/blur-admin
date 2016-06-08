@@ -6,7 +6,7 @@ var zip = require('gulp-zip');
 var prompt = require('gulp-prompt');
 var rename = require('gulp-rename');
 
-gulp.task('marketplace-release', ['build'], function () {
+gulp.task('super-marketplace-release', ['super-build'], function () {
   return gulp.src('')
     .pipe(prompt.prompt({
       type: 'input',

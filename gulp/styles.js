@@ -11,19 +11,19 @@ var $ = require('gulp-load-plugins')();
 var wiredep = require('wiredep').stream;
 var _ = require('lodash');
 
-gulp.task('styles-reload', ['styles'], function () {
+gulp.task('super-styles-reload', ['super-styles'], function () {
   return buildStyles()
     .pipe(browserSync.stream());
 });
 
-gulp.task('styles', function () {
+gulp.task('super-styles', function () {
   return buildStyles();
 });
 
-gulp.task('stylesAuth', function () {
+gulp.task('super-stylesAuth', function () {
   return buildSingleScss(path.join(conf.paths.src, '/sass/auth.scss'));
 });
-gulp.task('styles404', function () {
+gulp.task('super-styles404', function () {
   return buildSingleScss(path.join(conf.paths.src, '/sass/404.scss'));
 });
 
