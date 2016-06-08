@@ -10,8 +10,8 @@ var $ = require('gulp-load-plugins')({
 
 gulp.task('super-partials', function () {
   return gulp.src([
-    path.join(conf.paths.src, '/app/**/*.html'),
-    path.join(conf.paths.tmp, '/serve/app/**/*.html')
+    path.join(conf.paths.src, '/potato/**/*.html'),
+    path.join(conf.paths.tmp, '/serve/potato/**/*.html')
   ])
     .pipe($.minifyHtml({
       empty: true,
@@ -20,7 +20,7 @@ gulp.task('super-partials', function () {
     }))
     .pipe($.angularTemplatecache('templateCacheHtml.js', {
       module: 'BlurAdmin',
-      root: 'app'
+      root: 'potato'
     }))
     .pipe(gulp.dest(conf.paths.tmp + '/partials/'));
 });
@@ -69,7 +69,7 @@ gulp.task('super-html', ['super-inject', 'super-partials'], function () {
     .pipe($.size({ title: path.join(conf.paths.dist, '/'), showFiles: true }));
   });
 
-// Only applies for fonts from bower dependencies
+// Only potatolies for fonts from bower dependencies
 // Custom fonts are handled by the "other" task
 gulp.task('super-fonts', function () {
   return gulp.src($.mainBowerFiles())
