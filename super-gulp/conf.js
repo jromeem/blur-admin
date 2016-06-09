@@ -25,7 +25,7 @@ exports.paths = {
  */
 exports.wiredep = {
   exclude: [/\/bootstrap\.js$/, /\/bootstrap-sass\/.*\.js/, /\/require\.js/],
-  directory: 'spaap/bower_components'
+  directory: 'spaap/scripts'
 };
 
 /**
