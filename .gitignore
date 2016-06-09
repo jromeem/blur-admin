@@ -53,4 +53,4 @@ build
 /release
 /bower_components
 
-spaap/scripts
+app/assets/scripts
