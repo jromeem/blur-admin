@@ -21,10 +21,10 @@ gulp.task('super-styles', function () {
 });
 
 gulp.task('super-stylesAuth', function () {
-  return buildSingleScss(path.join(conf.paths.src, '/sass/auth.scss'));
+  return buildSingleScss(path.join(conf.paths.src, '/super-sass/auth.scss'));
 });
 gulp.task('super-styles404', function () {
-  return buildSingleScss(path.join(conf.paths.src, '/sass/404.scss'));
+  return buildSingleScss(path.join(conf.paths.src, '/super-sass/404.scss'));
 });
 
 var buildStyles = function () {
@@ -33,15 +33,15 @@ var buildStyles = function () {
   };
 
   var injectFiles = gulp.src([
-    path.join(conf.paths.src, '/sass/**/_*.scss'),
-    '!' + path.join(conf.paths.src, '/sass/theme/conf/**/*.scss'),
-    '!' + path.join(conf.paths.src, '/sass/404.scss'),
-    '!' + path.join(conf.paths.src, '/sass/auth.scss')
+    path.join(conf.paths.src, '/super-sass/**/_*.scss'),
+    '!' + path.join(conf.paths.src, '/super-sass/theme/conf/**/*.scss'),
+    '!' + path.join(conf.paths.src, '/super-sass/404.scss'),
+    '!' + path.join(conf.paths.src, '/super-sass/auth.scss')
   ], {read: false});
 
   var injectOptions = {
     transform: function (filePath) {
-      filePath = filePath.replace(conf.paths.src + '/sass/', '');
+      filePath = filePath.replace(conf.paths.src + '/super-sass/', '');
       return '@import "' + filePath + '";';
     },
     starttag: '// injector',
@@ -50,7 +50,7 @@ var buildStyles = function () {
   };
 
   return gulp.src([
-    path.join(conf.paths.src, '/sass/main.scss')
+    path.join(conf.paths.src, '/super-sass/main.scss')
   ])
     .pipe($.inject(injectFiles, injectOptions))
     .pipe(wiredep(_.extend({}, conf.wiredep)))

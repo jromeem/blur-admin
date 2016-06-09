@@ -37,7 +37,7 @@
         time: '2 hrs ago'
       },
       {
-        image: 'assets/super/shopping-cart.svg',
+        image: 'assets/images/super-img/shopping-cart.svg',
         template: 'New orders received.',
         time: '5 hrs ago'
       },
@@ -52,7 +52,7 @@
         time: '2 days ago'
       },
       {
-        image: 'assets/super/comments.svg',
+        image: 'assets/images/super-img/comments.svg',
         template: 'New comments on your post.',
         time: '3 days ago'
       },

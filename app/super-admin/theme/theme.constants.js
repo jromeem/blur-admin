@@ -5,7 +5,7 @@
 (function () {
   'use strict';
 
-  var IMAGES_ROOT = 'assets/super/';
+  var IMAGES_ROOT = 'assets/images/super-img/';
 
   angular.module('BlurAdmin.theme')
     .constant('layoutSizes', {
@@ -16,8 +16,8 @@
       images: {
         root: IMAGES_ROOT,
         profile: IMAGES_ROOT + 'super-admin/profile/',
-        amMap: 'assets/super/theme/vendor/ammap//dist/ammap/images/',
-        amChart: 'assets/super/theme/vendor/amcharts/dist/amcharts/images/'
+        amMap: 'assets/images/super-img/theme/vendor/ammap//dist/ammap/images/',
+        amChart: 'assets/images/super-img/theme/vendor/amcharts/dist/amcharts/images/'
       }
     })
     .constant('colorHelper', {

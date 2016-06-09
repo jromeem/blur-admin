@@ -17,7 +17,7 @@
         "subject": "Great text",
         "date": "2015-08-28T07:57:09",
         "body": $sce.trustAsHtml("<p>Hey John, </p><p>Check out this cool text.</p>"),
-        "pic": "super/Nasta.png",
+        "pic": "images/super-img/Nasta.png",
         "email": "petraramsey@mail.com",
         "attachment": "poem.txt",
         "position": "Great Employee",
@@ -32,7 +32,7 @@
         "important": false,
         "body": $sce.trustAsHtml("<p>Hey John, </p><br><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ex mauris, ultrices vel lectus quis, scelerisque hendrerit ipsum. Suspendisse ullamcorper turpis neque, eget dapibus magna placerat ac. Suspendisse rhoncus ligula ac mi tempus varius ut sed lacus. Sed et commodo nulla, et placerat leo. Nam rhoncus vulputate sem non pharetra. Praesent fringilla massa in laoreet convallis. Aliquam lobortis dui a congue facilisis. Aenean dapibus semper semper. Quisque aliquam, nibh dapibus interdum condimentum, ex velit tempor tortor, at vestibulum magna leo quis leo. Morbi pulvinar varius erat ac rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst.</p>" +
           "<br><p>Cras rhoncus quam ipsum, vel dignissim nisl egestas sed. Aliquam erat volutpat. Integer eu nisl elit. Donec malesuada diam vitae tellus luctus tincidunt. Donec tempus blandit neque, rutrum egestas ipsum sagittis tempor. Curabitur volutpat ligula enim, nec vehicula purus molestie at. Sed a facilisis enim, nec molestie magna. Donec in augue non est viverra dapibus vel tempus risus. Nam porttitor purus sit amet hendrerit ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"),
-        "pic": "super/Nasta.png",
+        "pic": "images/super-img/Nasta.png",
         "email": "petraramsey@mail.com",
         "position": "Great Employee",
         "tag": "study",
@@ -45,7 +45,7 @@
         "date": "2015-10-19T03:30:45",
         "important": false,
         "body": $sce.trustAsHtml("<p>Hey Nasta, </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>"),
-        "pic": "super/Nasta.png",
+        "pic": "images/super-img/Nasta.png",
         "email": "petraramsey@mail.com",
         "position": "Great Employee",
         "tag": "work",
@@ -58,7 +58,7 @@
         "date": "2015-05-05T12:59:45",
         "body": $sce.trustAsHtml("<p>Hey John, Consectetur adipiscing elit</p><br>" +
           "<p>Cras rhoncus quam ipsum, vel dignissim nisl egestas sed. Aliquam erat volutpat. Integer eu nisl elit. Donec malesuada diam vitae tellus luctus tincidunt. Donec tempus blandit neque, rutrum egestas ipsum sagittis tempor. Curabitur volutpat ligula enim, nec vehicula purus molestie at. Sed a facilisis enim, nec molestie magna. Donec in augue non est viverra dapibus vel tempus risus. Nam porttitor purus sit amet hendrerit ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"),
-        "pic": "super/Nick.png",
+        "pic": "images/super-img/Nick.png",
         "email": "barlowshort@mail.com",
         "position": "Graphical designer",
         "attachment": "design.psd",
@@ -71,7 +71,7 @@
         "subject": "Gift card",
         "date": "2015-07-18T10:19:01",
         "body": $sce.trustAsHtml("<p>Hey John, </p><br><p>Consectetur adipiscing elit, Lorem ipsum dolor sit amet</p>"),
-        "pic": "super/Nick.png",
+        "pic": "images/super-img/Nick.png",
         "email": "barlowshort@mail.com",
         "position": "Graphical designer",
         "tag": "study",
@@ -83,7 +83,7 @@
         "subject": "Some news",
         "date": "2015-09-23T03:04:10",
         "body": $sce.trustAsHtml("<p>Hey John, </p><br><p>Integer eu nisl elit. Donec malesuada diam vitae tellus luctus tincidunt. Donec tempus blandit neque, rutrum egestas ipsum sagittis tempor. Curabitur volutpat ligula enim, nec vehicula purus molestie at. Sed a facilisis enim, nec molestie magna. Donec in augue non est viverra dapibus vel tempus risus. Nam porttitor purus sit amet hendrerit ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>"),
-        "pic": "super/Nick.png",
+        "pic": "images/super-img/Nick.png",
         "email": "barlowshort@mail.com",
         "position": "Graphical designer",
         "tag": "work",
@@ -99,7 +99,7 @@
           "<p>Lorem ipsum dolor sit amet! Nullam imperdiet justo a ipsum laoreet euismod.</p>" +
           "<br><p>Cras tincidunt fermentum lectus, quis scelerisque lorem volutpat sed." +
           "Sed quis orci sed nisl sagittis viverra id at mauris. Nam venenatis mi nibh. Sed fringilla mattis vehic</p>"),
-        "pic": "super/Kostya.png",
+        "pic": "images/super-img/Kostya.png",
         "email": "schwart@mail.com",
         "position": "Technical Chef",
         "attachment": "file.doc",
@@ -116,7 +116,7 @@
           "<p>Aliquam eu facilisis eros, quis varius est. Nullam imperdiet justo a ipsum laoreet euismod.</p>" +
           "<br><p>Nulla facilisi. Nulla congue, arcu eget blandit lacinia, leo ante ullamcorper lectus, vel pulvinar justo ipsum vitae justo." +
           "Cras tincidunt fermentum lectus, quis scelerisque lorem volutpat sed. Sed quis orci sed nisl sagittis viverra id at mauris. Nam venenatis mi nibh. Sed fringilla mattis vehic</p>"),
-        "pic": "super/Kostya.png",
+        "pic": "images/super-img/Kostya.png",
         "email": "schwart@mail.com",
         "position": "Technical Chef",
         "tag": "family",
@@ -131,7 +131,7 @@
           "<p>Consectetur adipiscing elit. Aliquam sodales sem in nibh pellentesque, ac dignissim mi dapibus.</p>" +
           "<br>"+
           "<p>Cras tincidunt fermentum lectus, quis scelerisque lorem volutpat sed. Sed quis orci sed nisl sagittis viverra id at mauris. Nam venenatis mi nibh. Sed fringilla mattis vehic</p>"),
-        "pic": "super/Kostya.png",
+        "pic": "images/super-img/Kostya.png",
         "email": "schwart@mail.com",
         "position": "Technical Chef",
         "tag": "study",
@@ -144,7 +144,7 @@
         "date": "2015-07-16T06:47:53",
         "body": $sce.trustAsHtml("<p>Hello John, </p><p>Aliquam sodales sem in nibh pellentesque</p>" +
           "<p>Lorem ipsum dolor I find moji in skype sit amet!.</p>"),
-        "pic": "super/Andrey.png",
+        "pic": "images/super-img/Andrey.png",
         "email": "lakeishaphillips@mail.com",
         "position": "Mobile Developer",
         "tag": 'family',
@@ -157,7 +157,7 @@
         "date": "2015-06-20T07:05:02",
         "body": $sce.trustAsHtml("<p>Hey Vlad. </p><p>Lorem ipsum dolor sit amet!</p>" +
           "<p>Consectetur My Falasson App elit. Aliquam sodales sem in nibh pellentesque, ac dignissim mi dapibus.</p>"),
-        "pic": "super/Andrey.png",
+        "pic": "images/super-img/Andrey.png",
         "email": "lakeishaphillips@mail.com",
         "position": "Mobile Developer",
         "tag": 'family',
@@ -170,7 +170,7 @@
         "date": "2015-03-31T11:52:58",
         "body": $sce.trustAsHtml("<p>Hey Vlad. </p><p>Aliquam sodales sem in nibh pellentesque</p>" +
           "<p>Cras tincidunt fermentum lectus, quis scelerisque lorem volutpat sed.</p>"),
-        "pic": "super/Vlad.png",
+        "pic": "images/super-img/Vlad.png",
         "email": "carlsongoodman@mail.com",
         "position": "Fullstack man",
         "tag": "study",
@@ -183,7 +183,7 @@
         "date": "2015-02-25T10:58:58",
         "body": $sce.trustAsHtml("<p>Hey Andrey. </p>" +
           "<p>Cras tincidunt fermentum lectus, quis scelerisque lorem volutpat sed. Sed quis orci sed nisl sagittis viverra id at mauris. Nam venenatis mi nibh. Sed fringilla mattis vehic</p>"),
-        "pic": "super/Andrey.png",
+        "pic": "images/super-img/Andrey.png",
         "email": "lakeishaphillips@mail.com",
         "position": "Mobile Developer",
         "tag": "family",
@@ -196,7 +196,7 @@
         "date": "2015-03-31T11:52:58",
         "body": $sce.trustAsHtml("<p>Hey Vlad. </p><p>Lorem ipsum dolor sit amet!</p>" +
           "<p>Esse esse labore tempor ullamco ullamco. Id veniam laborum c.</p>"),
-        "pic": "super/Vlad.png",
+        "pic": "images/super-img/Vlad.png",
         "email": "carlsongoodman@mail.com",
         "position": "Fullstack man",
         "tag": "study",

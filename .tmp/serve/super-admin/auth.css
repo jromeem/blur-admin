@@ -96,7 +96,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: url("../assets/super/blur-bg.jpg") no-repeat center center;
+    background: url("../assets/images/super-img/blur-bg.jpg") no-repeat center center;
     background-size: cover;
     will-change: transform;
     z-index: -1; }
@@ -119,7 +119,7 @@ body.mobile {
     height: 100%;
     top: 0;
     left: 0;
-    background: url("../assets/super/blur-bg.jpg") no-repeat center center;
+    background: url("../assets/images/super-img/blur-bg.jpg") no-repeat center center;
     background-size: cover;
     will-change: transform;
     z-index: -1; }
@@ -232,10 +232,10 @@ a {
   display: block; }
 
 .icon-up {
-  background: url("../assets/super/arrow-green-up.svg") no-repeat 0 0; }
+  background: url("../assets/images/super-img/arrow-green-up.svg") no-repeat 0 0; }
 
 .icon-down {
-  background: url("../assets/super/arrow-red-down.svg") no-repeat 0 0; }
+  background: url("../assets/images/super-img/arrow-red-down.svg") no-repeat 0 0; }
 
 .disable-text-selection {
   -webkit-touch-callout: none;
@@ -1153,7 +1153,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: url("../assets/super/blur-bg.jpg") no-repeat center center;
+    background: url("../assets/images/super-img/blur-bg.jpg") no-repeat center center;
     background-size: cover;
     will-change: transform;
     z-index: -1; }
