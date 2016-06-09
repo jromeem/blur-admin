@@ -22,7 +22,7 @@ gulp.task('super-inject', ['super-scripts', 'super-styles', 'super-injectAuth', 
   ], {read: false});
 
   var injectScripts = gulp.src([
-    path.join(conf.paths.src, '/assets/js/**/*.js'),
+    path.join(conf.paths.src, '/assets/scripts/js/**/*.js'),
     path.join(conf.paths.src, '/super-admin/**/*.module.js'),
     path.join(conf.paths.src, '/super-admin/**/*.js'),
     path.join('!' + conf.paths.src, '/super-admin/**/*.spec.js'),
